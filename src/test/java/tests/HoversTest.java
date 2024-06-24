@@ -17,7 +17,7 @@ public class HoversTest extends BaseTest {
             Actions actions = new Actions(driver);
             actions.moveToElement(user).build().perform();
             String name = hoversPage.getName(String.valueOf(i));
-            assertEquals(name, "name: user"+ String.valueOf(i));
+            assertEquals(name, "name: user"+ i);
             WebElement href = hoversPage.getHref(String.valueOf(i));
             href.click();
             WebElement userPage = hoversPage.getUserPage();
