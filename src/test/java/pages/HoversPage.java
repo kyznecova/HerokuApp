@@ -23,8 +23,8 @@ public class HoversPage extends BasePage {
         return driver.findElement(By.xpath(String.format(USER_PATTERN, number)));
     }
 
-    public WebElement getName(String number) {
-        return driver.findElement(By.xpath(String.format(NAME_PATTERN, number)));
+    public String getName(String number) {
+        return driver.findElement(By.xpath(String.format(NAME_PATTERN, number))).getText();
     }
 
     public WebElement getHref(String number) {
