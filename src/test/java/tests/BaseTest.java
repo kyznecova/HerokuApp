@@ -16,6 +16,9 @@ public class BaseTest {
     TyposPage typosPage;
     TablesPage tablesPage;
     HoversPage hoversPage;
+    ContextMenuPage contextMenuPage;
+    DynamicControlsPage dynamicControlsPage;
+    FramesPage framesPage;
 
     @BeforeMethod
     public void setup() {
@@ -30,6 +33,9 @@ public class BaseTest {
         typosPage = new TyposPage(driver);
         tablesPage = new TablesPage(driver);
         hoversPage = new HoversPage(driver);
+        contextMenuPage = new ContextMenuPage(driver);
+        dynamicControlsPage = new DynamicControlsPage(driver);
+        framesPage = new FramesPage(driver);
     }
 
     @AfterMethod
